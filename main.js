@@ -26,11 +26,13 @@ let tot20 = (km * unitakm)- ((km * unitakm)*0.20);
 
 let tot = (km * unitakm);
 
+
+
 /* stampa caso under 18 */
 
 if(eta<18){
 
-    document.getElementById('stampa').innerHTML= tot20;
+    document.getElementById('stampa').innerHTML= tot20.toFixed(2);
 
 }
 
@@ -38,7 +40,7 @@ if(eta<18){
 
 else if(eta>65){
 
-    document.getElementById('stampa').innerHTML= "Il prezzo è : " + tot40;
+    document.getElementById('stampa').innerHTML= "Il prezzo è : " + tot40.toFixed(2);
 
 }
 
@@ -46,6 +48,6 @@ else if(eta>65){
 
 else if(eta<65 || eta > 18){
 
-    document.getElementById('stampa').innerHTML= "Il prezzo è : " + tot;
+    document.getElementById('stampa').innerHTML= "Il prezzo è : " + tot.toFixed(2);
 
 }
